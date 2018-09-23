@@ -1,0 +1,190 @@
+.grid-container-div {
+  background-color: black;
+  max-width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  padding-bottom: 0px;
+}
+.grid {
+  margin: auto;
+  width: 90vh;
+  height: 90vh;
+  border-collapse:collapse ;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+  table-layout: auto;
+  background-color: gray;
+}
+
+.grid td.small {
+    border-radius: 5em;
+    width: 8vh;
+    height: 8vh;
+
+}
+
+.grid td.medium {
+    border-radius: 5em;
+    width: 6vh;
+    height: 6vh;
+
+}
+
+.grid td.large {
+    border-radius: 5em;
+    width: 4vh;
+    height: 4vh;
+
+}
+
+#game-stats {
+  background-color: black;
+}
+
+#game-options {
+  background-color: black;
+  padding: 20px;
+  padding-top: 80px;
+}
+
+#username-field {
+  background-color: transparent;
+  border-bottom: 4px;
+  border-bottom-style: solid;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  color: #00ff00;
+}
+
+#username-field:focus {
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+}
+
+.vertical-align {
+  padding-top: 15vh;
+  vertical-align: center;
+  color: #00ff00;
+  border-width: 5px;
+  border-style: solid;
+  border-color: red;
+}
+
+.retro-font {
+  font-family: 'Press Start 2P', cursive;
+  font-size: small;
+  margin-left: 15px;
+}
+
+.current-score{
+  font-size: x-large;
+  text-align: center;
+  margin-right: 15px;
+}
+
+.title {
+  font-family: 'Faster One', cursive;
+  text-align: center;
+  font-size: 2em;
+  margin-top: -5vh;
+  margin-bottom: 5vh;
+}
+
+.timer {
+  text-align: left;
+  font-family: 'Orbitron', sans-serif;
+  background-color: black;
+  width: 50%;
+  margin-top: auto;
+  margin-bottom: 150px;
+  font-size: 5em;
+
+}
+
+.scores-title {
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  font-size: x-large;
+}
+
+.column {
+  margin: 10px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  vertical-align: center;
+}
+
+.redpulse {
+  background-color: red;
+}
+
+
+body {
+  background: radial-gradient(ellipse at center, #833f40 0%,#a85251 100%);
+}
+
+.testpulse {
+  /* margin:100px; */
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: url("https://i.stack.imgur.com/frGqG.png") ;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pulse {
+  /* margin:100px; */
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-right: 0px;
+  margin-left: 0px;
+  border-radius: 50%;
+  background: radial-gradient(#9EBEFD 5%, #B6FE94 15%, white 60%);
+  box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+  animation: pulse .5s infinite;
+}
+
+.pulse:hover {
+  animation: pulse .5s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 1000px rgba(204,169,44, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+      box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+
+.hide-cursor {
+    cursor: none;
+}
+
+.show-cursor {
+  cursor: crosshair;
+}
